@@ -40,16 +40,12 @@
 }
 .nav-link{
     text-decoration: none;
-    font-weight: 500px;
+    font-weight: 500;
 }
 .brand{
     font-weight: bold;
     font-size: 3rem;
 }
-/* .banner{
-    font-weight: 700;
-    font-size: 3rem;
-} */
 .navbar, .banner{
     max-width: 1040px;
     margin: 0 auto;
@@ -58,4 +54,18 @@
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 45px;
+}
+.banner-img{
+    width: 100%;
+}
+.banner-taitle{
+    font-weight: bold;
+    font-size: 64px;
+}
+/* responsive related style */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
