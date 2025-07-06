@@ -17,6 +17,10 @@
   border-radius: 5px;
   border: none;
 }
+.section-title{
+  font-weight: bold;
+  font-size: 45px;
+}
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -105,16 +109,26 @@ main > section {
   color: #ff900e;
 }
 /* responsive related style */
+/* small size device */
 @media screen and (max-width: 576px) {
   .navbar,
-  .nav-links, 
-  .teams{
+  .nav-links,
+  .teams {
     flex-direction: column;
   }
-  .our-features{
+  .our-features {
     margin-left: 25px;
   }
-  .team-img-container{
+  .team-img-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin-left: 50px;
   }
 }
