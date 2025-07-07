@@ -127,6 +127,17 @@ main > section {
 .features {
   gap: 50px;
 }
+#experience-badge {
+  padding: 40px 35px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -80px;
+  margin-top: -80px;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
 .facts-description {
   max-width: 540px;
   margin-bottom: 100px;
