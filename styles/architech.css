@@ -145,10 +145,11 @@ main > section {
   margin: 0 auto;
   margin-top: 40px;
 }
-.sponsor-img{
+.sponsor-img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-top: 50px;
+  filter: grayscale(100%);
 }
 /* responsive related style */
 /* small size device */
@@ -162,10 +163,12 @@ main > section {
     margin-left: 25px;
   }
   .team-img-container,
-  .facts-container {
+  .facts-container,
+  .sponsor-img {
     grid-template-columns: 1fr;
   }
-  .facts-container {
+  .facts-container,
+  .sponsor-img {
     justify-items: center;
     gap: 24px;
   }
@@ -177,5 +180,14 @@ main > section {
   }
   .our-features {
     margin-left: 50px;
+  }
+  .sponsor-img{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+  }
+  .facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
 }
